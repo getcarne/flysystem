@@ -5,6 +5,11 @@
 //   const d = newLocalDriver("/tmp/uploads");
 //   d.write("hello.txt", "hi");
 //   d.read("hello.txt"); // "hi"
+//
+// Three pieces: LocalDriver (one folder on disk), Filesystem (named
+// disks behind one default), FilesystemPolicy (guard rails like
+// read-only or allowed extensions). Errors are always StorageError,
+// with policy refusals as the more specific FilesystemPolicyError.
 
 const { LocalDriver, newLocalDriver, VIS_PUBLIC, VIS_PRIVATE } = require("./lib/local.js");
 const { Filesystem, newFilesystem } = require("./lib/filesystem.js");
