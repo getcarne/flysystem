@@ -1,0 +1,19 @@
+{
+  "name": "flysystem",
+  "version": "0.1.0",
+  "description": "Sandboxed local filesystem for Carne: atomic writes, visibility, policies and multi-disk facade",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://github.com/getcarne/flysystem",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getcarne/flysystem"
+  },
+  "author": "George Lemon",
+  "keywords": [
+    "carne",
+    "filesystem",
+    "storage",
+    "local"
+  ]
+}
